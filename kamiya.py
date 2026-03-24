@@ -3,7 +3,6 @@ from matplotlib import pyplot as plt
 from tqdm import tqdm
 from args import parse_args
 import random
-
 from class_v_s import TPoint, Segment
 from tools import end_distance, min_distance_point_to_line, show_img_3d, show_img_2d, draw_segment3d, draw_segment2d
 import math
