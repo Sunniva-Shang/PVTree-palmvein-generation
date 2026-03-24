@@ -497,7 +497,6 @@ def create_3dtree(case=1, fullpath='', croppath='', s=1, num_sams=7):
         min_seg = min_distance_point_to_line(position, segment)
         kamiya_optimal(args, new_point, min_seg, segment)
 
-    # sams
     for sam in range(num_sams):
         fig = plt.figure(figsize=(7, 8))
         ax = fig.add_subplot(111)
