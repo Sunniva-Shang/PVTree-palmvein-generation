@@ -6,7 +6,7 @@ import random
 from tools import min_distance_point_to_line, \
     show_img_2d, draw_segment2d_rotate
 from class_v_s import TPoint, Segment
-from kamyia import get_random_position_c1, kamyia_optimal
+from kamiya import get_random_position_c1, kamiya_optimal
 from crop_veinline import crop
 from data_tools import cross_folder, aug, cvt
 import time
@@ -495,7 +495,7 @@ def create_3dtree(case=1, fullpath='', croppath='', s=1, num_sams=7):
         position = get_random_position_c1(args)
         new_point = TPoint(args, position, args.r_ori)
         min_seg = min_distance_point_to_line(position, segment)
-        kamyia_optimal(args, new_point, min_seg, segment)
+        kamiya_optimal(args, new_point, min_seg, segment)
 
     # sams
     for sam in range(num_sams):
