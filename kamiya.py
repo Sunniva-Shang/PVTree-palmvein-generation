@@ -36,7 +36,7 @@ def get_random_position_c2(args):
     return p
 
 
-def kamyia_optimal(args, p2, min_segment, segment):
+def kamiya_optimal(args, p2, min_segment, segment):
     p0 = min_segment.point_in
     p1 = min_segment.point_out
 
@@ -149,7 +149,7 @@ if __name__ == '__main__':
         new_point = TPoint(args, position, radius=args.r_ori)
         min_seg = min_distance_point_to_line(position, line)
        
-        kamyia_optimal(args, new_point, min_seg, line)
+        kamiya_optimal(args, new_point, min_seg, line)
 
     print(len(line))
     draw_segment3d(args, ax3d, line)
